@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+              <title>Flex</title>
+              <style>
+.container
+{
+    background: black;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto 0px;
+    padding: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-wrap: column wrap;*/
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
+    /*align-items: center;*/
+    /*align-items: flex-end;*/
+    /*align-items: stretch;*/
+    /*align-content: space-between;*/
+}
+
+.item
+{
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   pading: 30px;
+   margin: 5px; 
+   width: 70px;
+}
+
+.item1
+{
+    background: lightgreen;
+}
+
+.item2
+{
+   background: green;
+}
+
+.item3
+{
+   background: cyan;
+   /*flex-grow: 4;*/
+}
+
+.item4
+{
+   background: grey;
+   /*flex-shrink: 2;*/
+}
+
+.item5
+{
+   background: darkgrey;
+}
+
+.item6
+{
+   background: darkblue;
+}
+
+.item7
+{
+   background: skyblue;
+}
+
+.item8
+{
+   background: orange;
+}
+</style>
+</head>
+<body>
+              <div class="container">
+              <div class="item1 item">One</div>
+              <div class="item2 item">Two</div>
+              <div class="item3 item">Three</div>
+              <div class="item4 item">Four</div>
+              <div class="item5 item">Five</div>
+              <div class="item6 item">Six</div>
+              <div class="item7 item">Seven</div>
+              <div class="item8 item">Eight</div>
+              </div>
+</body>
+</html>
+  
+

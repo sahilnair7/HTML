@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+            background-color:grey;
+            width:700px;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 300px 200px 100px;
+            grid-template-rows: 200px 200px 200px;
+            grid-gap:20px;
+            grid-column-gap:10px;
+            grid-row-gap:20px;
+            padding:40px;
+}
+        .items1{
+            background:red;
+            grid-column-end:span 3;
+        }
+        .items2{
+            background:violet;
+           
+        }
+        .items3{
+            background:green;
+            
+        }
+        .items4{
+            background:blue;
+            grid-row-end:span 2;
+        }
+        .items5{
+            background:orangered;
+        }
+        .items6{
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="items1">First</div>
+    <div class="items2">Second</div>
+    <div class="items3">Third</div>
+    <div class="items4">Fourth</div>
+    <div class="items5">Five</div>
+    <div class="items6">Six</div>
+</div>
+</body>
+</html>

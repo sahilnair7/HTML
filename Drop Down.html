@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+             <title>Drop Down</title>
+</head>
+<style>
+*
+{
+   padding: 0px;
+   margin: 0px;
+}
+
+.header
+{
+   width: 100%;
+   height: auto;
+   background-color: black;
+}
+
+.header ul
+{
+   list-style: none;
+   margin-top: 2px;
+}
+
+.header ul li
+{
+   background-color: red;
+   width: 170px;
+   height: 50px;
+   border: 2px solid red;
+   line-height: 50px;
+   float: left;
+   text-align: center;
+   color: black;
+   font-size: 14px;
+   position: relative;
+}
+
+.header ul li:hover
+{
+   background-color: cyan;
+}
+
+.header ul ul
+{
+   display: none;
+}
+
+.header ul li:hover>ul
+{
+   display: block;
+}
+
+.header ul ul ul
+{
+   position: absolute;
+   margin-left: 170px;
+   top: 0px;
+}
+
+</style>
+<body>
+            <div class="header">
+<ul>
+        <li><b>HOME</b></li>
+        <li><b>CONTACT INFO</b></li>
+        <li><b>ABOUT SAHIL NAIR</b></li>
+        <li><b>OUR SERVICES</b>
+        <ul>
+              <li><b>BLOGGER</b></li>
+              <li><b>INFLUENCER</b><li>
+              <li><b>FASHION WITH SAHIL</b>
+              <ul>
+                      <li><b>BE COOL</b></li>
+                      <li><b>BE YOU</b></li>
+               </ul>
+               </li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</html>
+                       

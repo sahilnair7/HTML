@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animations</title>
+<style> 
+div 
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+  line-height: 100px;
+}
+
+@keyframes example 
+{
+    from {width: 0px;}
+   to{
+       border-radius: 10%;
+       width: 800px;
+   }
+
+  0%   {background: url(Images/Sahil_Nair.jpeg); background-size: 100% 100%; left:0px; top:0px;}
+  25%  {background: url(Images/Smart_Boy.jpeg); background-size: 100% 100%; left:200px; top:0px;}
+  50%  {background: url(Images/Sahil_One.jpeg); background-size: 100% 100%; left:200px; top:200px;}
+  75%  {background: url(Images/Guitar_Boy.jpeg); background-size: 100% 100%; left:0px; top:200px;}
+  100% {background: url(Images/Cool_Boy.jpeg); background-size: 100% 100%; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

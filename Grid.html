@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* 
+{
+  box-sizing: border-box;
+}
+
+.header 
+{
+  border: 1px solid red;
+  padding: 15px;
+  background-color: cyan;
+}
+
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] 
+{
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+  height: 200px;
+  background-color: cyan;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 600px) 
+{ .header {background: red;}}
+
+@media only screen and (min-width: 600px) 
+{ .header {background: green;}}
+
+@media only screen and (min-width: 768px) 
+{ .header {background: blue;}} 
+
+@media only screen and (min-width: 992px) 
+{ .header {background: orange;}}
+
+@media only screen and (min-width: 1200px) 
+{ .header {background: pink;}} 
+
+@media only screen and (max-width: 600px) 
+{ .col-1 {background: red;}}
+
+@media only screen and (min-width: 600px) 
+{ .col-2 {background: green;}}
+
+@media only screen and (min-width: 768px) 
+{ .col-3 {background: blue;}}
+
+@media only screen and (min-width: 992px) 
+{ .col-4 {background: orange;}}
+
+@media only screen and (min-width: 1200px) 
+{ .col-5 {background: pink;}}
+
+@media only screen and (max-width: 600px) 
+{ .col-6 {background: red;}}
+
+ @media only screen and (min-width: 600px) 
+{ .col-7 {background: green;}}
+
+@media only screen and (min-width: 768px) 
+{ .col-8 {background: blue;}}
+
+@media only screen and (min-width: 992px) 
+{ .col-9 {background: orange;}}
+
+@media only screen and (min-width: 1200px) 
+{ .col-10 {background: pink;}}
+
+@media only screen and (max-width: 600px) 
+{ .col-11 {background: red;}}
+
+@media only screen and (min-width: 600px) 
+{ .col-12 {background: green;}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><center>INDIA</center></h1>
+</div>
+
+<div class="row">
+
+<div class="col-3">
+  <ul>
+    <li><b>The Flights</b></li>
+    <li><b>The City</b></li>
+    <li><b>The Food</b></li>
+    <li><b>The Culture</b></li>
+    <li><b>The Religion</b></li>
+    <li><b>The Roads</b></li>
+    <li><b>The Markets</b></li>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>The City</h1>
+  <p>New Delhi is the Capital of INDIA. Delhi can be divided into two parts, New Delhi & Old Delhi.</p>
+  <p>Delhi is a very famous city in INDIA. Its Metro is very famous.</p>
+</div>
+</div>
+
+<div class="col-3">
+   <h1>The Flights</h1>
+   <p>Both Domestic & International Flights Go From India.</p>
+   
+</div>
+
+<div class="col-3">
+  <img src="Images/Air India.jpg" width="100%" height="100%">
+</div>
+
+<div class="col-3">
+  <img src="Images/Spice Jet.jpg" width="100%" height="100%">
+</div>
+
+<div class="col-3">
+  <img src="Images/Indigo.jpg" width="100%" height="100%">
+</div>
+</div>
+</body>
+</html>
